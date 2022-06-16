@@ -1,13 +1,23 @@
 import React from "react";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
 
 const HeaderSocials = () => {
 	return (
 		<div className='header__socials'>
-			<a href='https://github.com/SagarM21' target='_blank'></a>
+			<a href='https://github.com/SagarM21' target='_blank'>
+				<FaGithub />{" "}
+			</a>
 			<a
 				href='https://www.linkedin.com/in/sagar-maheshwari-3330b6166/'
 				target='_blank'
-			></a>
+			>
+				<BsLinkedin />
+			</a>
+			<a href='https://twitter.com/Sagar_Maheshh' target='_blank'>
+				<BsTwitter />
+			</a>
 		</div>
 	);
 };
