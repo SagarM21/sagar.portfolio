@@ -37,12 +37,7 @@ const About = () => {
 						</article>
 					</div>
 
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-						autem vero rerum distinctio recusandae dolore animi sed, quidem
-						velit voluptates at sit inventore culpa laborum repellat tempora
-						libero excepturi dolores.
-					</p>
+					<p>"No code has zero defects."</p>
 
 					<a href='#contact' className='btn btn-primary'>
 						Let's Talk
