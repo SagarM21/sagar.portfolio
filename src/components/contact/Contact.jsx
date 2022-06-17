@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaDiscord } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		
+	};
 	return (
 		<section id='contact'>
 			<h5>Get In Touch</h5>
@@ -46,7 +54,7 @@ const Contact = () => {
 					</article>
 				</div>
 				{/* END OF CONTACT OPTIONS */}
-				<form action=''>
+				<form ref={form} onSubmit={sendEmail}>
 					<input
 						type='text'
 						name='name'
